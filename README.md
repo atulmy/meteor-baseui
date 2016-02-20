@@ -3,6 +3,14 @@ Basic user interface for Web and Mobile application with MeteorJS.
 
 URL: http://baseui.meteor.com/
 
+
+## Screenshots
+![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/baseui-home.png)
+![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/base-ui-latest.png)
+![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/base-ui-home-mobile.png)
+![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/base-ui-latest-mobile.png?v=0.1)
+
+
 ## Authors
 
 Atul Yadav - [GitHub](https://github.com/atulmy) &bull; [Twitter](https://twitter.com/atulmy)
