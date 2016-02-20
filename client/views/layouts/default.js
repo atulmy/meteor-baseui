@@ -16,7 +16,5 @@ Template.layoutsDefault.rendered = function () {
 
     $( function() {
         $('#app-wrapper').transition({ x: 0 });
-
-
     });
 };
