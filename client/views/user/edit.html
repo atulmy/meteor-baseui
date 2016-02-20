@@ -1,0 +1,56 @@
+<template name="userEdit">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='user_profile' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Profile</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}
+        <a href="{{ pathFor route='user_profile' }}" class="action">Submit</a>
+    {{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate content">
+        <div class="container">
+            <form>
+                <div class="clearfix">
+                    <p>Name</p>
+                    <p><input type="text" class="width100" value="Atul Yadav"/></p>
+                </div>
+
+                <div class="clearfix">
+                    <p>About you</p>
+                    <p>
+                        <textarea rows="5" class="width100">I'm a full stack developer with interest in web and mobile application development, especially with MeteorJS :)</textarea>
+                    </p>
+                </div>
+
+                <div class="clearfix">
+                    <p>Interests</p>
+                    <p>
+                        <label><input type="checkbox" checked="checked"/> Technology</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" checked="checked"/> Science</label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" /> Food</label>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

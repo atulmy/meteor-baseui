@@ -15,6 +15,6 @@ Template.layoutsDefault.rendered = function () {
     console.log('R - Template.layoutsDefault.rendered');
 
     $( function() {
-        $('#app-wrapper').transition({ x: 0 });
+        App.layoutInit();
     });
 };

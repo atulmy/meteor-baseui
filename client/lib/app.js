@@ -6,21 +6,27 @@ App = {
         // Scroll top
         $('#app-content').scrollTop(0);
 
+        // Focused state remove
+        $('body').removeClass('focused');
+    },
+
+    layoutInit: function() {
+        $('#app-wrapper').transition({ x: 0 });
+
         // Menu
-        $('.menu-show').on('click', function() {
-            $('.menu').transition({ left: '0px' });
+        $(document).on('click', '.menu-show', function() {
+            $('.menu').transition({ left: '0px' }, 500, 'snap');
         });
-        $('.menu').on('click', function() {
-            $('.menu').transition({ left: '-200px' });
+        $(document).on('click', '.menu, #app-content', function() {
+            $('.menu').transition({ left: '-200px' }, 500, 'snap');
         });
 
         // Focused state for input (hide footer)
-        $('body').removeClass('focused');
         var selector = "input[type='text'], textarea, input[type='password'], input[type='email'], input[type='number']";
-        $(selector).focusin(function() {
+        $(document).on('focusin', selector, function() {
             $('body').addClass('focused');
         });
-        $(selector).blur(function() {
+        $(document).on('blur', selector, function() {
             $('body').removeClass('focused');
         });
     }

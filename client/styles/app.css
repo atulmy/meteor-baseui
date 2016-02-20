@@ -102,7 +102,7 @@
         text-align: center;
         text-transform: uppercase;
     }
-    #app-header nav .section a:hover, #app-header nav .section a:active, #app-header nav .section a.active {
+    #app-header nav .section a:hover, #app-header nav .section a.active {
         background-color: #ccc;
     }
     #app-header nav .section a:last-child {
@@ -158,7 +158,7 @@
         text-align: center;
         text-transform: uppercase;
     }
-    #app-footer nav .section a:hover, #app-footer nav .section a:active, #app-footer nav .section a.active {
+    #app-footer nav .section a:hover, #app-footer nav .section a.active {
         background-color: #ccc;
     }
     #app-footer nav .section a:last-child {
@@ -198,7 +198,7 @@
                 display: block;
                 padding: 20px 15px;
             }
-            #app-header .mobile.menu a:hover, #app-header .mobile.menu a:active, #app-header .mobile.menu a.active {
+            #app-header .mobile.menu a:hover, #app-header .mobile.menu a.active {
                 background-color: #eee;
             }
             #app-header nav .section .mobile-menu-links {

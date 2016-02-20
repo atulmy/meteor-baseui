@@ -49,12 +49,6 @@ Router.configure({
     });
 
 // User
-    // Profile
-    Router.route('/user/profile', {
-        name: 'user_profile',
-        template: 'userProfile'
-    });
-
     // Login
     Router.route('/user/login', {
         name: 'user_login',
@@ -65,4 +59,16 @@ Router.configure({
     Router.route('/user/register', {
         name: 'user_register',
         template: 'userRegister'
+    });
+
+    // Profile
+    Router.route('/user/profile', {
+        name: 'user_profile',
+        template: 'userProfile'
+    });
+
+    // Edit
+    Router.route('/user/edit', {
+        name: 'user_edit',
+        template: 'userEdit'
     });
