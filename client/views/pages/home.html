@@ -1,0 +1,33 @@
+<template name="pagesHome">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="#" class="action menu-show">Menu</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">The Blog</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}
+        <a href="{{ pathFor route='blog_write' }}" class="action">Write</a>
+    {{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate content vertical-align">
+        <div class="container vertical-align-child">
+            <h1 style="text-align: center;">Hello there!</h1>
+
+            <p style="text-align: center;">Writing some blogs today, you must - Yoda</p>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

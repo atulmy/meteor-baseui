@@ -1,0 +1,31 @@
+<template name="pagesAbout">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='pages_home' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">About</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}
+        <a href="{{ pathFor route='blog_write' }}" class="action">Write</a>
+    {{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate content vertical-align">
+        <div class="container vertical-align-child">
+            <p>Extums experimentum! Cum luna peregrinatione, omnes hydraes prensionem mirabilis, dexter axonaes. Varnish five tablespoons of okra in one container of triple sec.</p>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

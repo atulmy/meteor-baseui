@@ -1,0 +1,23 @@
+<template name="commonHeader">
+
+    <nav>
+        <div class="section left">
+            {{> yield "headerLeft"}}
+        </div>
+
+        <div class="section middle">
+            {{> yield "headerMiddle"}}
+        </div>
+
+        <div class="section right">
+            {{> commonMenuLinks }}
+
+            {{> yield "headerRight"}}
+        </div>
+    </nav>
+
+    <div class="mobile menu">
+        {{> commonMenuLinks }}
+    </div>
+
+</template>

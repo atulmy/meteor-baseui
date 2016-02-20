@@ -1,0 +1,41 @@
+<template name="userLogin">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="#" class="action menu-show">Menu</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Login</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}
+        <a href="{{ pathFor route='user_profile' }}" class="action">Submit</a>
+    {{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate content vertical-align">
+        <div class="container vertical-align-child">
+            <form>
+                <div class="clearfix">
+                    <p>Email</p>
+                    <p><input type="email" class="width100"/></p>
+                </div>
+
+                <div class="clearfix">
+                    <p>Password</p>
+                    <p><input type="password" class="width100"/></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsLogin }}
+    {{/ contentFor }}
+
+</template>

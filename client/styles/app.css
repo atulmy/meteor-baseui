@@ -1,0 +1,298 @@
+/* --------------- Common --------------- */
+    html, body {
+        padding: 0px;
+        margin: 0px;
+        background-color: #efebe9;
+        color: black;
+        line-height: normal;
+        font-family: sans-serif
+    }
+    .clearfix { clear: both; }
+    .cursor-pointer { cursor: pointer; }
+    .width100 { width: 100%; }
+    .height100 { height: 100%; }
+    .display-none { display: none; }
+    .content { opacity: 0; }
+    .animate { -webkit-transition: translate3d(0,0,0); }
+    .opacity-0 { opacity: 0; }
+    .opacity-0-5 { opacity: 0.5; }
+    .scale-0 { -ms-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); }
+    .scale-0-5 { -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
+    a { text-decoration: none; color: black; }
+/* --------------- / Common --------------- */
+
+/* --------------- Typography --------------- */
+    .tx-center { text-align: center; }
+    .tx-uppercase { text-transform: uppercase; }
+    .tx-underlined { text-decoration: underline; }
+    .tx-italic { font-style: italic; }
+    /* size */
+        .tx-xxs { font-size: 10px; }
+        .tx-xs { font-size: 12px; }
+        .tx-sm { font-size: 14px; }
+        .tx-md { font-size: 18px; }
+        .tx-lg { font-size: 22px; }
+        .tx-xl { font-size: 28px; }
+    /* thickness */
+        .tx-thin { font-weight: 100; }
+        .tx-light { font-weight: 200; }
+        .tx-lighter { font-weight: 300; }
+        .tx-bold { font-weight: 500; }
+        .tx-bolder { font-weight: 700; }
+/* --------------- / Typography --------------- */
+
+/* --------------- Content --------------- */
+    /* vertical align */
+        .vertical-align {
+            display: table;
+            height: 100%;
+            width: 100%;
+            margin: 0px !important;
+        }
+        .vertical-align .vertical-align-child {
+            display: table-cell;
+            vertical-align: middle;
+            float: none;
+        }
+    /* loader */
+        .common-loading {
+            text-align: center;
+        }
+/* --------------- / Content --------------- */
+
+/* --------------- App Wrapper --------------- */
+    #app-wrapper {
+        clear: both;
+        padding: 0px;
+        margin: 0px;
+    }
+/* --------------- / App Wrapper --------------- */
+
+
+/* --------------- App Header --------------- */
+    #app-header {
+        clear: both;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    }
+    #app-header nav {
+        height: 50px;
+    }
+    #app-header nav .section {
+        padding: 0px;
+        display: table;
+        height: 100%;
+        float: left;
+    }
+    #app-header nav .section.left, #app-header nav .section.right {
+        width: 25%;
+    }
+    #app-header nav .section.middle {
+        width: 50%;
+    }
+    #app-header nav .section .action, #app-header nav .section .title {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #app-header nav .section a:hover, #app-header nav .section a:active, #app-header nav .section a.active {
+        background-color: #ccc;
+    }
+    #app-header nav .section a:last-child {
+        border-right: none;
+    }
+/* --------------- / App Header --------------- */
+
+/* --------------- App Content --------------- */
+    #app-content {
+        clear: both;
+        top: 50px;
+        bottom: 70px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        padding: 15px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    #app-content .container {
+        height: 100%;
+    }
+/* --------------- / App Content --------------- */
+
+/* --------------- App Footer --------------- */
+    #app-footer {
+        clear: both;
+        height: 70px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0 !important;
+        z-index: 2;
+        overflow: hidden;
+        background-color: #ffffff;
+        box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+    #app-footer nav {
+        height: 70px;
+    }
+    #app-footer nav .section {
+        padding: 0px;
+        display: table;
+        height: 100%;
+        width: 25%;
+        float: left;
+    }
+    #app-footer nav .section a {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #app-footer nav .section a:hover, #app-footer nav .section a:active, #app-footer nav .section a.active {
+        background-color: #ccc;
+    }
+    #app-footer nav .section a:last-child {
+        border-right: none;
+    }
+/* --------------- / App Footer --------------- */
+
+/* --------------- App Focused --------------- */
+    .focused #app-content {
+        bottom: 0px !important;
+    }
+    .focused #app-footer {
+        display: none;
+    }
+/* --------------- / App Focused --------------- */
+
+/* --------------- Responsive --------------- */
+    /* mobile */
+        @media (max-width: 991px) {
+            #app-wrapper {
+                transform: none !important;
+            }
+            #app-header .desktop {
+                display: none !important;
+            }
+            /* menu */
+            #app-header .mobile.menu {
+                position: fixed;
+                width: 200px;
+                left: -200px;
+                top: 0px;
+                bottom: 0px;
+                background-color: #fff;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            }
+            #app-header .mobile.menu a {
+                display: block;
+                padding: 20px 15px;
+            }
+            #app-header .mobile.menu a:hover, #app-header .mobile.menu a:active, #app-header .mobile.menu a.active {
+                background-color: #eee;
+            }
+            #app-header nav .section .mobile-menu-links {
+                display: none;
+            }
+            #app-footer nav .section.half {
+                width: 50%;
+            }
+        }
+
+    /* desktop */
+        @media (min-width: 992px) {
+            #app-header .mobile {
+                display: none !important;;
+            }
+            #app-wrapper {
+                left: 15%;
+                right: 15%;
+                top: 7%;
+                bottom: 7%;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+                background-color: #EFEBE9;
+                position: fixed;
+                transform: translate(0px, 100px);
+            }
+            #app-header {
+                left: 200px;
+            }
+
+            #app-header nav .section {
+                padding: 0px;
+                display: table;
+                height: 100%;
+                float: left;
+            }
+            #app-header nav .section.left {
+                display: none;
+            }
+            #app-header nav .section.left, #app-header nav .section.right {
+                width: 50%;
+            }
+            #app-header nav .section.middle {
+                width: 50%;
+            }
+            #app-header nav .section .title {
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            #app-content {
+                left: 200px;
+                bottom: 0px;
+                overflow-y: visible;
+            }
+            #app-footer {
+                width: 200px;
+                left: 0px;
+                height: calc(100%);
+                box-shadow: none;
+                z-index: 99;
+                display: block !important;
+                border-top: none;
+                border-right: 1px solid #d3d3d3;
+            }
+            #app-footer nav {
+                height: 100%;
+            }
+            #app-footer nav .section {
+                width: 100%;
+                height: 25%;
+                display: table;
+                border-bottom: 1px solid #f6f6f6;
+            }
+            #app-footer nav .section:last-child {
+                border-bottom: none;
+            }
+            #app-footer nav .section a {
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            #app-background .head {
+                height: 20%;
+                background-color: #009688;
+                width: 100%;
+                position: fixed;
+            }
+            #app-background .body {
+                top: 20%;
+                height: 80%;
+                background-color: #DFDFDF;
+                width: 100%;
+                position: fixed;
+            }
+        }
+/* --------------- / Responsive --------------- */

@@ -1,0 +1,19 @@
+<template name="commonFooterTabsCommon">
+
+    <div class="section">
+        <a href="{{ pathFor route='pages_home' }}">Home</a>
+    </div>
+
+    <div class="section">
+        <a href="{{ pathFor route='blog_latest' }}" class="{{ isActiveRoute 'blog_latest' }}">Latest</a>
+    </div>
+
+    <div class="section">
+        <a href="{{ pathFor route='blog_trending' }}" class="{{ isActiveRoute 'blog_trending' }}">Trending</a>
+    </div>
+
+    <div class="section">
+        <a href="{{ pathFor route='user_profile' }}" class="{{ isActiveRoute 'user_profile' }} {{ isActiveRoute 'user_login' }} {{ isActiveRoute 'user_register' }}">Profile</a>
+    </div>
+
+</template>

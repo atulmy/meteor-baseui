@@ -1,0 +1,37 @@
+<template name="userProfile">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="#" class="action menu-show">Menu</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Profile</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}
+        <a href="#" class="action">Update</a>
+    {{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate content">
+        <div class="container">
+            <h1 class="title scale-0-5" style="text-align: center;">Atul Yadav</h1>
+            <div class="clearfix" style="background-color: #fff; padding: 10px;">
+                <p>I'm a full stack developer with interest in web and mobile application development, especially with MeteorJS :)</p>
+            </div>
+            <p>Blogs written: 20</p>
+            <p>Joined:: 21st February, 2016</p>
+            <p><a href="{{ pathFor route='user_login' }}">Logout</a></p>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

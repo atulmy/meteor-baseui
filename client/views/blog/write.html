@@ -1,0 +1,54 @@
+<template name="blogWrite">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='pages_home' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Write</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}
+        <a href="{{ pathFor route='blog_latest' }}" class="action">Submit</a>
+    {{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate content">
+        <div class="container">
+            <form>
+                <div class="clearfix">
+                    <p>Title</p>
+                    <p><input type="text" class="width100"/></p>
+                </div>
+
+                <div class="clearfix">
+                    <p>Content</p>
+                    <p>
+                        <textarea rows="10" class="width100"></textarea>
+                    </p>
+                </div>
+
+                <div class="clearfix">
+                    <p>Category</p>
+                    <p>
+                        <select class="width100">
+                            <option>Technology</option>
+                            <option>Science</option>
+                            <option>Food</option>
+                        </select>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

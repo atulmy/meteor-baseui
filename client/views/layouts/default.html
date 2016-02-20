@@ -1,0 +1,26 @@
+<template name="layoutsDefault">
+
+    <div id="app-background">
+        <div class="head"></div>
+        <div class="body"></div>
+    </div>
+
+    <div id="app-wrapper">
+        <div id="app-header">
+            {{> commonHeader }}
+        </div>
+
+        <div id="app-content">
+            {{> yield }}
+        </div>
+
+        <div id="app-footer">
+            {{> commonFooter }}
+        </div>
+
+        <div id="app-modals">
+            {{> yield 'modals' }}
+        </div>
+    </div>
+
+</template>
