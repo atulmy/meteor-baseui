@@ -1,7 +1,7 @@
 App = {
     init: function() {
         // Common Page Animation
-        $('.content').transition({ opacity: 1 });
+        $('.fadein').transition({ opacity: 1 });
 
         // Scroll top
         $('#app-content').scrollTop(0);

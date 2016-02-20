@@ -21,4 +21,10 @@
     zimme:active-route
 
 # UI / Theme
-    johnantoni:meteor-transit
+    # CSS framework (choose one and get started!
+        # twbs:bootstrap            # http://getbootstrap.com/
+        # materialize:materialize   # http://materializecss.com/
+        # semantic:ui               # http://semantic-ui.com/
+
+    # Animations
+        johnantoni:meteor-transit
