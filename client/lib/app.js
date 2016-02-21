@@ -15,10 +15,10 @@ App = {
 
         // Menu
         $(document).on('click', '.menu-show', function() {
-            $('.menu').transition({ left: '0px' }, 500, 'snap');
+            $('.menu').transition({ x: 0 }, 500, 'snap');
         });
         $(document).on('click', '.menu, #app-content', function() {
-            $('.menu').transition({ left: '-200px' }, 500, 'snap');
+            $('.menu').transition({ x: -210 }, 500, 'snap');
         });
 
         // Focused state for input (hide footer)

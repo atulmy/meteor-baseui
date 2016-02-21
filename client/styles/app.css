@@ -188,11 +188,12 @@
             #app-header .mobile.menu {
                 position: fixed;
                 width: 200px;
-                left: -210px;
+                left: 0px;
                 top: 0px;
                 bottom: 0px;
                 background-color: #fff;
                 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+                transform: translate(-210px, 0);
             }
             #app-header .mobile.menu a {
                 display: block;
