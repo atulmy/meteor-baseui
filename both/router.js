@@ -72,3 +72,27 @@ Router.configure({
         name: 'user_edit',
         template: 'userEdit'
     });
+
+// Widgets
+    // List
+    Router.route('/widgets', {
+        name: 'widgets',
+        template: 'widgets'
+    });
+    // Modal
+        // Basic
+        Router.route('/widgets/modal', {
+            name: 'widgets_modal',
+            template: 'widgetsModal'
+        });
+    // Slider
+        // Basic
+        Router.route('/widgets/slider', {
+            name: 'widgets_slider',
+            template: 'widgetsSlider'
+        });
+        // Fullscreen
+        Router.route('/widgets/slider/fullscreen', {
+            name: 'widgets_slider_fullscreen',
+            template: 'widgetsSliderFullscreen'
+        });

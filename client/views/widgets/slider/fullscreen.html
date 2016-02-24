@@ -1,0 +1,62 @@
+<template name="widgetsSliderFullscreen">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='widgets' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Widget - Slider</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}{{/ contentFor }}
+
+<!-- Content -->
+    <div class="content">
+        <div class="fullscreen">
+            <div class="slider">
+                <div class="slider-item">
+                    <div class="vertical-align" style="background-color: #D7D1FF; border: 1px solid #aaa;">
+                        <div class="vertical-align-child tx-center">
+                            <p>One</p>
+                            <p>
+                                <a href="{{ pathFor route='widgets' }}" class="btn">Back</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item ">
+                    <div class="vertical-align" style="background-color: #D9FFD1; border: 1px solid #aaa;">
+                        <div class="vertical-align-child tx-center">
+                            <p>Two</p>
+                            <p>
+                                <a href="{{ pathFor route='widgets' }}" class="btn">Back</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item ">
+                    <div class="vertical-align" style="background-color: #FFE4D1; border: 1px solid #aaa;">
+                        <div class="vertical-align-child tx-center">
+                            <p>Three</p>
+                            <p>
+                                <a href="{{ pathFor route='widgets' }}" class="btn">Back</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

@@ -1,0 +1,53 @@
+<template name="widgetsSlider">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='widgets' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Widget - Slider</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}{{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate fadein vertical-align">
+        <div class="content vertical-align-child">
+            <div class="slider" style="height: 300px; border: 1px solid #aaa;" id="myElement">
+                <div class="slider-item">
+                    <div class="vertical-align" style="background-color: #D7D1FF;">
+                        <div class="vertical-align-child tx-center">
+                            One
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="vertical-align" style="background-color: #D9FFD1;">
+                        <div class="vertical-align-child tx-center">
+                            Two
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <div class="vertical-align" style="background-color: #FFE4D1;">
+                        <div class="vertical-align-child tx-center">
+                            Three
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

@@ -15,16 +15,17 @@
     standard-minifiers      # JS/CSS minifiers run for production mode
     es5-shim                # ECMAScript 5 compatibility for older browsers.
     ecmascript              # Enable ECMAScript2015+ syntax in app code
+    fastclick               # Eliminating 300ms delay between physical tap & firing click event on mobile
 
 # Routing
     iron:router
     zimme:active-route
 
 # UI / Theme
-    # CSS framework (choose one and get started!
+    # CSS framework (choose one and get started!)
         # twbs:bootstrap            # http://getbootstrap.com/
         # materialize:materialize   # http://materializecss.com/
         # semantic:ui               # http://semantic-ui.com/
 
-    # Animations
-        johnantoni:meteor-transit
+# Mobile
+    # Touch support
