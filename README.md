@@ -14,7 +14,7 @@ Preview it on different resolutions: http://design.google.com/resizer/#url=http:
 - The goal is to create something very light weight for MVPs and small applications and extend it for real applications.
 - It is responsive on Mobile and Web both.
 
-Note: However it is build using Meteor, but the CSS/JS can be used in any project and is independent of the framework or Meteor templating language (eg: Blaze) which was an essential goal since we can built using React or AngularJS with thier own template syntax.
+Note: However it is build using Meteor, but the CSS/JS can be used in any project and is independent of Meteor platform or Meteor templating language (eg: Blaze) which was an essential goal since we can built using React or AngularJS with thier own template syntax.
  
 ## Widgets
 - Modals
@@ -34,22 +34,9 @@ Check it out and let me know what you think about this experiment. If you would 
 
 Atul Yadav - [GitHub](https://github.com/atulmy) &bull; [Twitter](https://twitter.com/atulmy)
 
-## Made with Meteor
-
-Meteor is an ultra-simple environment for building modern web
-applications.
-
-With Meteor you write apps:
-
-* in pure JavaScript
-* that send data over the wire, rather than HTML
-* using your choice of popular open-source libraries
-
-Documentation is available at http://docs.meteor.com/
-
 ## License
 
-Copyright (c) 2015 Atul Yadav http://github.com/atulmy
+Copyright (c) 2016 Atul Yadav http://github.com/atulmy
 
 The MIT License (http://www.opensource.org/licenses/mit-license.php)
 
