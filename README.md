@@ -3,7 +3,7 @@ Basic user interface for Web and Mobile application with MeteorJS.
 
 Demo: http://baseui.meteor.com/
 
-Preview it on different resolutions: http://design.google.com/resizer/#url=http://baseui.meteor.com
+ Preview on Resizer: http://design.google.com/resizer/#url=http://baseui.meteor.com
 
 ## What is it?
 - Just simple set of CSS
