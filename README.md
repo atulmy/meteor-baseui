@@ -7,10 +7,15 @@ Preview it on different resolutions: http://design.google.com/resizer/#url=http:
 
 ## What is it?
 - Just simple set of CSS
-- Not an UI framework
-- Its for getting you started
-- Can be used along with your favorite CSS frameworks
+- It does not uses any UI framework
+- Not a CSS framework
+- Its for getting you started with a Mobile / Web application
+- Can be used along with your favorite CSS frameworks like Bootstrap, MaterializeCSS, etc.
+- The goal is to create something very light weight for MVPs and small applications and extend it for real applications.
+- It is responsive on Mobile and Web both.
 
+Note: However it is build using Meteor, but the CSS/JS can be used in any project and is independent of the framework or Meteor templating language (eg: Blaze) which was an essential goal since we can built using React or AngularJS with thier own template syntax.
+ 
 ## Widgets
 - Modals
 - Sliders (with touch)
@@ -22,6 +27,8 @@ Preview it on different resolutions: http://design.google.com/resizer/#url=http:
 ## Libraries used
 - [Hammer JS](http://hammerjs.github.io)
 - [jQuery Transit](http://ricostacruz.com/jquery.transit/)
+
+Check it out and let me know what you think about this experiment. If you would like to contribute to this project, please let me know! 
 
 ## Authors
 
