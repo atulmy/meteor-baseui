@@ -15,6 +15,10 @@ Preview it on different resolutions: http://design.google.com/resizer/#url=http:
 - Modals
 - Sliders (with touch)
 
+## Whats next?
+- Basic styling for form element
+- Widgets - Bottom Sheet
+
 ## Libraries used
 - [Hammer JS](http://hammerjs.github.io)
 - [jQuery Transit](http://ricostacruz.com/jquery.transit/)
