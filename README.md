@@ -1,9 +1,9 @@
 # Base UI
 Basic user interface for Web and Mobile application with MeteorJS.
 
-URL: http://baseui.meteor.com/
+Demo: http://baseui.meteor.com/
 
-View it on different devices: http://design.google.com/resizer/#url=http://baseui.meteor.com
+Preview it on different resolutions: http://design.google.com/resizer/#url=http://baseui.meteor.com
 
 ## What is it?
 - Just simple set of CSS
@@ -18,12 +18,6 @@ View it on different devices: http://design.google.com/resizer/#url=http://baseu
 ## Libraries used
 - [Hammer JS](http://hammerjs.github.io)
 - [jQuery Transit](http://ricostacruz.com/jquery.transit/)
-
-## Screenshots
-![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/baseui-home.png)
-![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/base-ui-latest.png)
-![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/base-ui-home-mobile.png)
-![screenshot](http://atulmy.com/atulmy.com/attachments/images/baseui/base-ui-latest-mobile.png?v=0.1)
 
 ## Authors
 
