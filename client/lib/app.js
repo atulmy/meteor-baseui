@@ -54,6 +54,7 @@ App = {
             },
 
             bottomsheet: function () {
+                $('.modal-bottomsheet-backdrop').remove();
                 $('#app-wrapper #app-content').append('<div class="modal-bottomsheet-backdrop"></div>');
 
                 $('.modal-bottomsheet-activate').on('click', function () {
