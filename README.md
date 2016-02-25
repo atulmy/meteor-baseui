@@ -1,5 +1,5 @@
 # Base UI
-Basic user interface for Web and Mobile application with MeteorJS.
+Basic user interface for Mobile and Web application with MeteorJS.
 
 Demo: http://baseui.meteor.com/
 
