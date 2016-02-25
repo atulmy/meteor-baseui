@@ -21,8 +21,13 @@ Note: However it is build using Meteor, but the CSS/JS can be used in any projec
 - Sliders
 - Bottom Sheet
 
+## Optional Styles
+- Grid
+- Buttons
+- Form Elements
+
 ## Whats next?
-- Basic styling for form element
+- Optional - Fontawesome
 
 ## Libraries used
 - [Hammer JS](http://hammerjs.github.io)

@@ -101,3 +101,10 @@ Router.configure({
             name: 'widgets_slider_fullscreen',
             template: 'widgetsSliderFullscreen'
         });
+
+// Optional Styles
+    // List
+    Router.route('/optional', {
+        name: 'optional',
+        template: 'optional'
+    });

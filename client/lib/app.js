@@ -37,7 +37,6 @@ App = {
         });
     },
 
-
     Widgets: {
         Modal: {
             basic: function () {

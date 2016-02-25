@@ -12,6 +12,7 @@
     .width100 { width: 100%; }
     .height100 { height: 100%; }
     .display-none { display: none; }
+    .display-block { display: block; }
     .fadein { opacity: 0; }
     .animate { -webkit-backface-visibility: hidden; -webkit-transition: translate3d(0,0,0); }
     .opacity-0 { opacity: 0; }
@@ -313,7 +314,7 @@
 
 /* --------------- Responsive --------------- */
     /* mobile */
-        @media (max-width: 991px) {
+        @media (max-width: 992px) {
             /* wrapper */
                 #app-wrapper {
                     transform: none !important;
@@ -371,7 +372,7 @@
         }
 
     /* desktop hd */
-        @media (min-width: 992px) {
+        @media (min-width: 993px) {
             /* wrapper */
                 #app-wrapper {
                     left: 15%;

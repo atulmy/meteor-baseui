@@ -1,0 +1,102 @@
+<template name="optional">
+
+    <!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='pages_home' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Optional Styles</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}{{/ contentFor }}
+
+    <!-- Content -->
+    <div class="animate fadein">
+        <div class="content">
+            <div>
+                <h3 class="tx-center">Grid</h3>
+
+                <p>Mobile Device</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s4">.container .row .col.s4</div>
+                        <div class="col s4">.container .row .col.s4</div>
+                        <div class="col s4">.container .row .col.s4</div>
+                    </div>
+                </div>
+
+                <p>Desktop Device</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6">.container .row .col.l6</div>
+                        <div class="col l6">.container .row .col.l6</div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <h3 class="tx-center">Buttons</h3>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col s4 tx-center">
+                        <a href="#" class="button">Anchor</a>
+                    </div>
+
+                    <div class="col s4 tx-center">
+                        <input type="button" value="Input" />
+                    </div>
+
+                    <div class="col s4 tx-center">
+                        <button>Button</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <button class="button-primary width100">Button Primary</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <h3 class="tx-center">Form Elements</h3>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <input type="text" placeholder="Input text"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <textarea rows="5" placeholder="Textarea"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <select>
+                            <option>Technology</option>
+                            <option>Science</option>
+                            <option>Food</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>
