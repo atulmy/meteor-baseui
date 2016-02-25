@@ -1,0 +1,60 @@
+<template name="widgetsModalBottomsheet">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='widgets' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Widget - Modal</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}{{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate fadein vertical-align">
+        <div class="content vertical-align-child">
+            <h2 class="tx-center">Widget - Modal Bottomsheet</h2>
+
+            <p class="tx-center">
+                <a href="#" class="tx-uppercase btn modal-bottomsheet-activate" modal-bottomsheet="example">Show</a>
+            </p>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+<!-- Modals -->
+    <div class="modal-bottomsheet" id="example">
+        <div class="modal-bottomsheet-content">
+            <p>
+                Abnoba rusticus calcaria est. All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+            </p>
+            <p>
+                Abnoba rusticus calcaria est. All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+            </p>
+            <p>
+                Abnoba rusticus calcaria est. All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+            </p>
+            <p>
+                Abnoba rusticus calcaria est. All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+            </p>
+            <p>
+                Abnoba rusticus calcaria est. All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+            </p>
+            <p>
+                Abnoba rusticus calcaria est. All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+            </p>
+            <p class="tx-center" style="margin-bottom: 0px;">
+                <a href="#" class="btn modal-bottomsheet-close">Close</a>
+            </p>
+        </div>
+    </div>
+
+</template>

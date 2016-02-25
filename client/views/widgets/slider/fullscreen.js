@@ -23,7 +23,7 @@ Template.widgetsSliderFullscreen.rendered = function () {
         $('.slider .slider-item').hammer().bind('tap press pinch rotate', function(event) {
             console.log(event);
 
-            alert('You '+event.type);
+            $(event.target).find('span').append('You '+event.type+'ed <br/>');
         });
     });
 };

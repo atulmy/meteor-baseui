@@ -85,6 +85,11 @@ Router.configure({
             name: 'widgets_modal',
             template: 'widgetsModal'
         });
+        // Bottomsheet
+        Router.route('/widgets/bottomsheet', {
+            name: 'widgets_modal_bottomsheet',
+            template: 'widgetsModalBottomsheet'
+        });
     // Slider
         // Basic
         Router.route('/widgets/slider', {

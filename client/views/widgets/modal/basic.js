@@ -17,6 +17,6 @@ Template.widgetsModal.rendered = function () {
     $( function() {
         App.init();
 
-        App.Widgets.modal();
+        App.Widgets.Modal.basic();
     });
 };

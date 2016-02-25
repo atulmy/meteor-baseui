@@ -11,14 +11,20 @@ App = {
     },
 
     layoutInit: function() {
-        $('#app-wrapper').transition({ x: 0 });
+        $('#app-wrapper').transition({ scale: 1 }, 500, 'snap');
 
         // Menu
         $(document).on('click', '.menu-show', function() {
             $('.menu').transition({ x: 0 }, 500, 'snap');
+            $('.menu-backdrop').transition({ x: 0 }, 0, function() {
+                $('.menu-backdrop').transition({ opacity: 1 }, 500, 'snap');
+            });
         });
-        $(document).on('click', '.menu', function() {
+        $(document).on('click', '.menu, .menu-backdrop', function() {
             $('.menu').transition({ x: -210 }, 500, 'snap');
+            $('.menu-backdrop').transition({ opacity: 0 }, 300, 'snap', function() {
+                $('.menu-backdrop').transition({ x: '100%' }, 0);
+            });
         });
 
         // Focused state for input (hide footer)
@@ -33,16 +39,40 @@ App = {
 
 
     Widgets: {
-        modal: function() {
-            $('.modal-activate').on('click', function() {
-                var modal = $(this).attr('modal');
-                $('#'+modal).transition({ y: 0, opacity: 1 }, 500, 'snap');
-            });
-            $('.modal-close').on('click', function() {
-                $('.modal').transition({ opacity: 0 }, 500, 'snap', function() {
-                    $('.modal').transition({ y: 'calc(100%)' }, 0);
+        Modal: {
+            basic: function () {
+                $('.modal-activate').on('click', function () {
+                    var modal = $(this).attr('modal');
+                    $('#' + modal).transition({y: 0, opacity: 1}, 500, 'snap');
                 });
-            });
+
+                $('.modal-close').on('click', function () {
+                    $('.modal').transition({opacity: 0}, 500, 'snap', function () {
+                        $('.modal').transition({y: 'calc(100%)'}, 0);
+                    });
+                });
+            },
+
+            bottomsheet: function () {
+                $('#app-wrapper #app-content').append('<div class="modal-bottomsheet-backdrop"></div>');
+
+                $('.modal-bottomsheet-activate').on('click', function () {
+                    var modal = $(this).attr('modal-bottomsheet');
+                    $('#' + modal).transition({y: 0, opacity: 1}, 500, 'snap');
+
+                    $('.modal-bottomsheet-backdrop').transition({ y: 0 }, 0, function() {
+                        $('.modal-bottomsheet-backdrop').transition({ opacity: 1 }, 500, 'snap');
+                    });
+                });
+
+                $('.modal-bottomsheet-close, .modal-bottomsheet-backdrop').on('click', function () {
+                    $('.modal-bottomsheet').transition({y: '100%', opacity: 0}, 500, 'snap');
+
+                    $('.modal-bottomsheet-backdrop').transition({ opacity: 0 }, 300, 'snap', function() {
+                        $('.modal-bottomsheet-backdrop').transition({ y: '100%' }, 0);
+                    });
+                });
+            }
         },
 
         slider: function(sliderParent, sliderItems) {

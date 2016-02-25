@@ -18,11 +18,11 @@ Note: However it is build using Meteor, but the CSS/JS can be used in any projec
  
 ## Widgets
 - Modals
-- Sliders (with touch)
+- Sliders
+- Bottom Sheet
 
 ## Whats next?
 - Basic styling for form element
-- Widgets - Bottom Sheet
 
 ## Libraries used
 - [Hammer JS](http://hammerjs.github.io)

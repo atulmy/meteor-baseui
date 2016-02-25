@@ -208,53 +208,90 @@
 
 /* --------------- Widgets --------------- */
     /* Modal */
-        .modal {
-            opacity: 0;
-            position: fixed;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            background-color: #fff;
-            transform: translate(0, calc(100%));
-            z-index: 4;
-        }
-        .modal .modal-header {
-            height: 50px;
-            position: absolute;
-            top: 0px;
-            display: table;
-            width: 100%;
-        }
-        .modal .modal-content {
-            padding: 0px 15px;
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            top: 50px;
-            bottom: 50px;
-            overflow-x: hidden;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        .modal .modal-footer {
-            height: 50px;
-            position: absolute;
-            bottom: 0px;
-            display: table;
-            width: 100%;
-            box-shadow: 0px 0px 10px #ccc;
-        }
-        .modal .modal-header .section, .modal .modal-footer .section {
-            height: 100%;
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .modal .modal-footer .section:hover, .modal .modal-footer .section:active {
-            background-color: #ccc;
-        }
+        /* basic */
+            .modal {
+                opacity: 0;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-color: #fff;
+                transform: translate(0, calc(100%));
+                z-index: 4;
+            }
+            .modal .modal-header {
+                height: 50px;
+                position: absolute;
+                top: 0px;
+                display: table;
+                width: 100%;
+            }
+            .modal .modal-content {
+                padding: 0px 15px;
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 50px;
+                bottom: 50px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .modal .modal-footer {
+                height: 50px;
+                position: absolute;
+                bottom: 0px;
+                display: table;
+                width: 100%;
+                box-shadow: 0px 0px 10px #ccc;
+            }
+            .modal .modal-header .section, .modal .modal-footer .section {
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .modal .modal-footer .section:hover, .modal .modal-footer .section:active {
+                background-color: #ccc;
+            }
+        /* bottomsheet */
+            .modal-bottomsheet {
+                opacity: 0;
+                position: fixed;
+                top: 50%;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-color: #fff;
+                transform: translate(0, calc(100%));
+                z-index: 5;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            }
+            .modal-bottomsheet .modal-bottomsheet-content {
+                padding: 15px;
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .modal-bottomsheet-backdrop {
+                position: fixed;
+                width: 100%;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-color: rgba(0, 0, 0, 0.2);
+                opacity: 0;
+                z-index: 4;
+                transform: translate(100%, 0);
+            }
     /* slider */
         .slider {
             width: 100%;
@@ -295,6 +332,7 @@
                         background-color: #fff;
                         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
                         transform: translate(-210px, 0);
+                        z-index: 6;
                     }
                     #app-header .mobile.menu a {
                         display: block;
@@ -305,6 +343,18 @@
                     }
                     #app-header nav .section .mobile-menu-links {
                         display: none;
+                    }
+                    #app-header .mobile.menu-backdrop {
+                        position: fixed;
+                        width: 100%;
+                        top: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        left: 0px;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        opacity: 0;
+                        z-index: 5;
+                        transform: translate(100%, 0);
                     }
             /* footer */
                 #app-footer nav .section.half {
@@ -331,7 +381,9 @@
                     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
                     background-color: #EFEBE9;
                     position: fixed;
-                    transform: translate(0px, 100px);
+                    border-radius: 2px;
+                    overflow: hidden;
+                    transform: scale(1.5);
                 }
             /* header */
                 #app-header .mobile {
@@ -347,17 +399,29 @@
                     float: left;
                 }
                 #app-header nav .section.left {
+                    float: left;
+                    width: auto;
+                }
+                #app-header nav .section.left .action {
+                    color: #999;
+                }
+                #app-header nav .section.left .action.menu-show {
                     display: none;
                 }
-                #app-header nav .section.left, #app-header nav .section.right {
-                    width: 50%;
-                }
                 #app-header nav .section.middle {
-                    width: 50%;
+                    width: auto;
+                    float: left;
+                }
+                #app-header nav .section.right {
+                    float: right;
+                    width: auto;
                 }
                 #app-header nav .section .title {
                     text-align: left;
                     padding-left: 20px;
+                }
+                #app-header nav .section .action, #app-header nav .section .title {
+                    padding: 0px 10px;
                 }
 
             /* content */
