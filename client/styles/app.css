@@ -363,14 +363,6 @@
                 }
         }
 
-    /* desktop */
-        @media (max-width: 1024px) {
-            #app-wrapper {
-                left: 10%;
-                right: 10%;
-            }
-        }
-
     /* desktop hd */
         @media (min-width: 993px) {
             /* wrapper */
@@ -473,4 +465,13 @@
                     position: fixed;
                 }
         }
+
+    /* desktop */
+        @media (max-width: 1024px) {
+            #app-wrapper {
+                left: 10%;
+                right: 10%;
+            }
+        }
+
 /* --------------- / Responsive --------------- */
