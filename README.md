@@ -30,8 +30,8 @@ Note: However it is build using Meteor, but the CSS/JS can be used in any projec
 - Optional - Fontawesome
 
 ## Libraries used
-- [Hammer JS](http://hammerjs.github.io)
-- [jQuery Transit](http://ricostacruz.com/jquery.transit/)
+- [Hammer JS](http://hammerjs.github.io) - Touch gestures
+- [jQuery Transit](http://ricostacruz.com/jquery.transit/) - CSS3 Animations
 
 Check it out and let me know what you think about this experiment. If you would like to contribute to this project, please let me know! 
 
