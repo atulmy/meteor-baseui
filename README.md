@@ -6,28 +6,30 @@ Demo: http://baseui.meteor.com/
  Preview on Resizer: http://design.google.com/resizer/#url=http://baseui.meteor.com
 
 ## What is it?
+- Not a CSS framework
 - Just simple set of CSS
 - It does not uses any UI framework
-- Not a CSS framework
 - Its for getting you started with a Mobile / Web application
 - Can be used along with your favorite CSS frameworks like Bootstrap, MaterializeCSS, etc.
-- The goal is to create something very light weight for MVPs and small applications and extend it for real applications.
-- It is responsive on Mobile and Web both.
+- The goal is to create something very light weight for MVPs and small applications and extend it for real applications
+- Ofcourse, it is responsive on Mobile and Web
 
-Note: However it is build using Meteor, but the CSS/JS can be used in any project and is independent of Meteor platform or Meteor templating language (eg: Blaze) which was an essential goal since we can built using React or AngularJS with thier own template syntax.
+Note: However this is build on Meteor, but the CSS/JS can be used in any project and is independent of Meteor platform or Meteor's default templating language (eg: Blaze) which was an essential goal in order to built using React or AngularJS with their own template syntax.
  
 ## Widgets
 - Modals
 - Sliders
 - Bottom Sheet
 
-## Optional Styles
+## Optional (styles & components)
 - Grid
 - Buttons
 - Form Elements
+- Colors
 
 ## Whats next?
 - Optional - Fontawesome
+- Widgets - Tabs
 
 ## Libraries used
 - [Hammer JS](http://hammerjs.github.io)

@@ -108,3 +108,8 @@ Router.configure({
         name: 'optional',
         template: 'optional'
     });
+    // Colors
+    Router.route('/optional/colors', {
+        name: 'optional_colors',
+        template: 'optionalColors'
+    });

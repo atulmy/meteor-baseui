@@ -307,8 +307,8 @@
             position: absolute;
         }
         .slider .slider-item.animate-css {
-            transition: all .3s;
-            -webkit-transition: all .3s;
+            transition: all .2s;
+            -webkit-transition: all .2s;
         }
 /* --------------- / Widgets --------------- */
 

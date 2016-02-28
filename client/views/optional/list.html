@@ -1,6 +1,6 @@
 <template name="optional">
 
-    <!-- Header -->
+<!-- Header -->
     <!-- Left -->
     {{# contentFor "headerLeft" }}
         <a href="{{ pathFor route='pages_home' }}" class="action">Back</a>
@@ -8,13 +8,13 @@
 
     <!-- Middle -->
     {{# contentFor "headerMiddle" }}
-        <div class="title">Optional Styles</div>
+        <div class="title">Optional</div>
     {{/ contentFor }}
 
     <!-- Right -->
     {{# contentFor "headerRight" }}{{/ contentFor }}
 
-    <!-- Content -->
+<!-- Content -->
     <div class="animate fadein">
         <div class="content">
             <div>
@@ -101,12 +101,58 @@
                     </div>
                 </div>
             </div>
+
+            <hr/>
+
+            <div>
+                <h3 class="tx-center">Colors</h3>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col s4 colors">
+                            <div class="red white-text">.red .white-text</div>
+                            <div class="pink">pink</div>
+                            <div class="purple">purple</div>
+                            <div class="deep-purple">deep-purple</div>
+                            <div class="indigo">indigo</div>
+                            <div class="blue">blue</div>
+                        </div>
+
+                        <div class="col s4 colors">
+                            <div class="light-blue">light-blue</div>
+                            <div class="cyan">cyan</div>
+                            <div class="teal">teal</div>
+                            <div class="green">green</div>
+                            <div class="light-green">light-green</div>
+                            <div class="lime">lime</div>
+                        </div>
+
+                        <div class="col s4 colors">
+                            <div class="yellow">yellow</div>
+                            <div class="amber">amber</div>
+                            <div class="orange">orange</div>
+                            <div class="deep-orange">deep-orange</div>
+                            <div class="brown">brown</div>
+                            <div class="grey">grey</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="tx-center">
+                    <a href="{{ pathFor route='optional_colors' }}" class="button">View All Colors</a>
+                </p>
+            </div>
         </div>
     </div>
 
-    <!-- Footer -->
+<!-- Footer -->
     {{# contentFor "footerTabs"}}
         {{> commonFooterTabsCommon }}
     {{/ contentFor }}
+
+    <style>
+        /* demo */
+        .colors div { padding: 10px 15px; }
+    </style>
 
 </template>
