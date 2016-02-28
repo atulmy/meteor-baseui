@@ -18,8 +18,12 @@ Note: Although this is build on Meteor, the CSS/JS can be used in any project an
  
 ## Widgets
 - Modals
+  - Basic
+  - Fullscreen
+  - Bottomsheet
 - Sliders
-- Bottom Sheet
+  - Basic
+  - Fullscreen
 
 ## Optional (styles & components)
 - Grid
