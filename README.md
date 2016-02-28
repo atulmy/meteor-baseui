@@ -8,13 +8,13 @@ Demo: http://baseui.meteor.com/
 ## What is it?
 - Not a CSS framework
 - Just simple set of CSS
-- It does not uses any UI framework
-- Its for getting you started with a Mobile / Web application
+- It does not use any UI framework
+- Its for getting you started with a Mobile + Web application
 - Can be used along with your favorite CSS frameworks like Bootstrap, MaterializeCSS, etc.
-- The goal is to create something very light weight for MVPs and small applications and extend it for real applications
+- The goal is to create something very light weight for MVPs and small applications and extend it for bigger applications
 - Ofcourse, it is responsive on Mobile and Web
 
-Note: However this is build on Meteor, but the CSS/JS can be used in any project and is independent of Meteor platform or Meteor's default templating language (eg: Blaze) which was an essential goal in order to built using React or AngularJS with their own template syntax.
+Note: Although this is build on Meteor, the CSS/JS can be used in any project and is independent of Meteor platform or Meteor's default templating language (eg: Blaze) which was an essential goal in order to built using React or AngularJS with their own template syntax.
  
 ## Widgets
 - Modals
@@ -35,7 +35,7 @@ Note: However this is build on Meteor, but the CSS/JS can be used in any project
 - [Hammer JS](http://hammerjs.github.io) - Touch gestures
 - [jQuery Transit](http://ricostacruz.com/jquery.transit/) - CSS3 Animations
 
-Check it out and let me know what you think about this experiment. If you would like to contribute to this project, please let me know! 
+Check it out and let me know what you think about this experiment. If you like it please contribute and make it better!
 
 ## Authors
 

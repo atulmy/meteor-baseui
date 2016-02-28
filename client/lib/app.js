@@ -8,6 +8,10 @@ App = {
 
         // Focused state remove
         $('body').removeClass('focused');
+
+        // Modal backdrops
+        $('.modal-backdrop').remove();
+        $('.modal-bottomsheet-backdrop').remove();
     },
 
     layoutInit: function() {
@@ -40,15 +44,40 @@ App = {
     Widgets: {
         Modal: {
             basic: function () {
+                $('.modal-backdrop').remove();
+                $('#app-wrapper #app-content').append('<div class="modal-backdrop"></div>');
+
                 $('.modal-activate').on('click', function () {
                     var modal = $(this).attr('modal');
-                    $('#' + modal).transition({y: 0, opacity: 1}, 500, 'snap');
+
+                    $('#' + modal).transition({ y: 0, scale: 0.5 }, 0, function() {
+                        $('#' + modal).transition({ scale: 1, opacity: 1 }, 500, 'snap');
+                    });
+
+                    $('.modal-backdrop').transition({ y: 0 }, 0, function() {
+                        $('.modal-backdrop').transition({ opacity: 1 }, 300, 'snap');
+                    });
+                });
+
+                $('.modal-close, .modal-backdrop').on('click', function () {
+                    $('.modal').transition({ opacity: 0, scale: 0.5 }, 500, 'snap', function() {
+                        $('.modal').transition({ y: 'calc(100%)', scale: 1 }, 0);
+                    });
+
+                    $('.modal-backdrop').transition({ opacity: 0 }, 300, 'snap', function() {
+                        $('.modal-backdrop').transition({ y: '100%' }, 0);
+                    });
+                });
+            },
+
+            full: function () {
+                $('.modal-full-activate').on('click', function () {
+                    var modal = $(this).attr('modal-full');
+                    $('#' + modal).transition({ y: 0, opacity: 1 }, 500, 'snap');
                 });
 
                 $('.modal-close').on('click', function () {
-                    $('.modal').transition({opacity: 0}, 500, 'snap', function () {
-                        $('.modal').transition({y: 'calc(100%)'}, 0);
-                    });
+                    $('.modal-full').transition({ y: 'calc(100%)', opacity: 0 }, 500, 'snap');
                 });
             },
 
@@ -61,7 +90,7 @@ App = {
                     $('#' + modal).transition({y: 0, opacity: 1}, 500, 'snap');
 
                     $('.modal-bottomsheet-backdrop').transition({ y: 0 }, 0, function() {
-                        $('.modal-bottomsheet-backdrop').transition({ opacity: 1 }, 500, 'snap');
+                        $('.modal-bottomsheet-backdrop').transition({ opacity: 1 }, 300, 'snap');
                     });
                 });
 

@@ -221,18 +221,30 @@
                 right: 0px;
                 bottom: 0px;
                 left: 0px;
-                background-color: #fff;
+                z-index: 5;
+                background-color: transparent;
                 transform: translate(0, calc(100%));
-                z-index: 4;
             }
-            .modal .modal-header {
+            .modal .modal-inner {
+                position: absolute;
+                left: 10%;
+                right: 10%;
+                top: 20%;
+                bottom: 20%;
+                overflow-x: hidden;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                background-color: #fff;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+            }
+            .modal .modal-inner .modal-header {
                 height: 50px;
                 position: absolute;
                 top: 0px;
                 display: table;
                 width: 100%;
             }
-            .modal .modal-content {
+            .modal .modal-inner .modal-content {
                 padding: 0px 15px;
                 position: absolute;
                 left: 0px;
@@ -243,7 +255,7 @@
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
             }
-            .modal .modal-footer {
+            .modal .modal-inner .modal-footer {
                 height: 50px;
                 position: absolute;
                 bottom: 0px;
@@ -251,14 +263,74 @@
                 width: 100%;
                 box-shadow: 0px 0px 10px #ccc;
             }
-            .modal .modal-header .section, .modal .modal-footer .section {
+            .modal .modal-inner .modal-header .section, .modal .modal-inner .modal-footer .section {
                 height: 100%;
                 display: table-cell;
                 vertical-align: middle;
                 text-align: center;
                 text-transform: uppercase;
             }
-            .modal .modal-footer .section:hover, .modal .modal-footer .section:active {
+            .modal .modal-inner .modal-footer .section:hover, .modal .modal-inner .modal-footer .section:active {
+                background-color: #ccc;
+            }
+            .modal-backdrop {
+                position: fixed;
+                width: 100%;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-color: rgba(0, 0, 0, 0.2);
+                opacity: 0;
+                z-index: 4;
+                transform: translate(100%, 0);
+            }
+        /* full */
+            .modal-full {
+                opacity: 0;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                z-index: 4;
+                background-color: #fff;
+                transform: translate(0, calc(100%));
+            }
+            .modal-full .modal-full-header {
+                height: 50px;
+                position: absolute;
+                top: 0px;
+                display: table;
+                width: 100%;
+            }
+            .modal-full .modal-full-content {
+                padding: 0px 15px;
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                top: 50px;
+                bottom: 50px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .modal-full .modal-full-footer {
+                height: 50px;
+                position: absolute;
+                bottom: 0px;
+                display: table;
+                width: 100%;
+                box-shadow: 0px 0px 10px #ccc;
+            }
+            .modal-full .modal-full-header .section, .modal-full .modal-full-footer .section {
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .modal-full .modal-full-footer .section:hover, .modal-full .modal-full-footer .section:active {
                 background-color: #ccc;
             }
         /* bottomsheet */
@@ -270,8 +342,8 @@
                 bottom: 0px;
                 left: 0px;
                 background-color: #fff;
-                transform: translate(0, calc(100%));
                 z-index: 5;
+                transform: translate(0, calc(100%));
                 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
             }
             .modal-bottomsheet .modal-bottomsheet-content {

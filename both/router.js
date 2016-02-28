@@ -85,8 +85,13 @@ Router.configure({
             name: 'widgets_modal',
             template: 'widgetsModal'
         });
+        // Full
+        Router.route('/widgets/modal/full', {
+            name: 'widgets_modal_full',
+            template: 'widgetsModalFull'
+        });
         // Bottomsheet
-        Router.route('/widgets/bottomsheet', {
+        Router.route('/widgets/modal/bottomsheet', {
             name: 'widgets_modal_bottomsheet',
             template: 'widgetsModalBottomsheet'
         });
