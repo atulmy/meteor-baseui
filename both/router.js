@@ -113,3 +113,8 @@ Router.configure({
         name: 'optional_colors',
         template: 'optionalColors'
     });
+    // Fontawesome
+    Router.route('/optional/fontawesome', {
+        name: 'optional_fontawesome',
+        template: 'optionalFontawesome'
+    });

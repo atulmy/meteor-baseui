@@ -5,7 +5,7 @@
         background-color: #efebe9;
         color: black;
         line-height: normal;
-        font-family: sans-serif
+        font-family: sans-serif;
     }
     .clearfix { clear: both; }
     .cursor-pointer { cursor: pointer; }
@@ -176,6 +176,10 @@
         vertical-align: middle;
         text-align: center;
         text-transform: uppercase;
+    }
+    #app-footer nav .section a i {
+        display: block;
+        margin-bottom: 5px;
     }
     #app-footer nav .section a:hover, #app-footer nav .section a.active {
         background-color: #ccc;

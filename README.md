@@ -26,9 +26,9 @@ Note: However this is build on Meteor, but the CSS/JS can be used in any project
 - Buttons
 - Form Elements
 - Colors
+- Fontawesome
 
 ## Whats next?
-- Optional - Fontawesome
 - Widgets - Tabs
 
 ## Libraries used
