@@ -81,15 +81,19 @@
     {{/ contentFor }}
 
     <style>
-        /* demo */
-        #app-header nav .section.middle {
-            width: 70%;
-        }
-        #app-header nav .section.left, #app-header nav .section.right {
-            width: 15%;
-        }
-        #app-footer nav .section a {
-           font-size: 12px;
+        /* mobile */
+        @media (max-width: 992px) {
+            #app-header nav .section.middle {
+                width: 70%;
+            }
+
+            #app-header nav .section.left, #app-header nav .section.right {
+                width: 15%;
+            }
+
+            #app-footer nav .section a {
+                font-size: 12px;
+            }
         }
     </style>
 </template>
