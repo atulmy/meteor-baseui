@@ -1,0 +1,66 @@
+<template name="widgetsTab">
+
+<!-- Header -->
+    <!-- Left -->
+    {{# contentFor "headerLeft" }}
+        <a href="{{ pathFor route='widgets' }}" class="action">Back</a>
+    {{/ contentFor }}
+
+    <!-- Middle -->
+    {{# contentFor "headerMiddle" }}
+        <div class="title">Widget - Tab</div>
+    {{/ contentFor }}
+
+    <!-- Right -->
+    {{# contentFor "headerRight" }}{{/ contentFor }}
+
+<!-- Content -->
+    <div class="animate fadein">
+        <div class="content">
+            <div>
+                <div class="tabs" tab="music">
+                    <a href="#" tab-content="tab-1" class="active">Songs</a>
+                    <a href="#" tab-content="tab-2">Artists</a>
+                </div>
+
+                <div id="music">
+                    <div class="tab-content active" id="tab-1">
+                        Songs
+                    </div>
+
+                    <div class="tab-content" id="tab-2">
+                        Artists
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <div class="tabs" tab="example">
+                    <a href="#" tab-content="tab-1" class="active">Tab 1</a>
+                    <a href="#" tab-content="tab-2">Tab 2</a>
+                    <a href="#" tab-content="tab-3">Tab 3</a>
+                </div>
+
+                <div id="example">
+                    <div class="tab-content active" id="tab-1">
+                        Tab 1 - All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+                    </div>
+
+                    <div class="tab-content" id="tab-2">
+                        Tab 2 - Only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+                    </div>
+
+                    <div class="tab-content" id="tab-3">
+                        Tab 3 - Abnoba rusticus calcaria est. All holy bodies remember each other, only small selfs have a mind. xHell of relativity will cosmically hurt a new guru. After crushing the cracker crumps, rub white bread, bagel and salsa verde with it in a grinder.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    {{# contentFor "footerTabs"}}
+        {{> commonFooterTabsCommon }}
+    {{/ contentFor }}
+
+</template>

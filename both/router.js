@@ -106,6 +106,11 @@ Router.configure({
             name: 'widgets_slider_fullscreen',
             template: 'widgetsSliderFullscreen'
         });
+    // Tab
+        Router.route('/widgets/tab', {
+            name: 'widgets_tab',
+            template: 'widgetsTab'
+        });
 
 // Optional Styles
     // List

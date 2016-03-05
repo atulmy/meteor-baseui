@@ -170,6 +170,19 @@ App = {
             }, 100, sliderParent, sliderItems);
 
             return new HammerCarousel(document.querySelector(sliderParent), Hammer.DIRECTION_HORIZONTAL);
+        },
+
+        tab: function() {
+            $('.tabs a').on('click', function() {
+                var tab = $(this).parents('.tabs').eq(0).attr('tab');
+                var tabContent = $(this).attr('tab-content');
+
+                $(this).parents('.tabs').find('a').removeClass('active');
+                $(this).addClass('active');
+
+                $('#'+tab+' .tab-content').removeClass('active');
+                $('#'+tab+' #'+tabContent).addClass('active');
+            });
         }
     }
 };

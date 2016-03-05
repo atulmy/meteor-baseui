@@ -386,6 +386,31 @@
             transition: all .2s;
             -webkit-transition: all .2s;
         }
+    /* tabs */
+        .tabs {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            display: table;
+            min-height: 30px;
+        }
+        .tabs a {
+            display: table-cell;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px 0px;
+        }
+        .tabs a:hover, .tabs a.active {
+            border-bottom: 3px solid #ccc;
+        }
+        .tab-content {
+            display: none;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .tab-content.active {
+            display: block;
+        }
 /* --------------- / Widgets --------------- */
 
 /* --------------- Responsive --------------- */
