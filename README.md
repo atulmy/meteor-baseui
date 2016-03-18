@@ -24,6 +24,7 @@ Note: Although this is build on Meteor, the CSS/JS can be used in any project an
 - Sliders
   - Basic
   - Fullscreen
+- Tabs
 
 ## Optional (styles & components)
 - Grid
@@ -33,7 +34,7 @@ Note: Although this is build on Meteor, the CSS/JS can be used in any project an
 - Fontawesome
 
 ## Whats next?
-- Widgets - Tabs
+- Widgets - Collapsible
 
 ## Libraries used
 - [Hammer JS](http://hammerjs.github.io) - Touch gestures
