@@ -1,9 +1,7 @@
 # Base UI
 Basic user interface for Mobile and Web application with MeteorJS.
 
-Demo: http://baseui.meteor.com/
-
- Preview on Resizer: http://design.google.com/resizer/#url=http://baseui.meteor.com
+Without Meteor: https://github.com/atulmy/baseui
 
 ## What is it?
 - Not a CSS framework
