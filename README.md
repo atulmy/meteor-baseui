@@ -1,6 +1,8 @@
 # Base UI
 Basic user interface for Mobile and Web application with MeteorJS.
 
+Demo: http://baseui.demo.atulmy.com/
+
 Without Meteor: https://github.com/atulmy/baseui
 
 ## What is it?
